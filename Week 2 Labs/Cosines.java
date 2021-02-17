@@ -6,10 +6,10 @@ public class Cosines {
         double theta = (2 * Math.PI) / 3;
         double c;
         
-        double cosTheta = Math.cos(theta);
-        c = Math.pow(a, 2) + Math.pow(b, 2) - (2 * a * b)*cosTheta;
+		// c = square root of (a^2 + b^2 - ((2*a*b)*cos(theta))
+        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) - (2 * a * b)*(Math.cos(Theta)));
         
         System.out.println(c);
     }    
-	//The answer is 48.9 recurring 
+	//The answer is 6.9 recurring 
 }
